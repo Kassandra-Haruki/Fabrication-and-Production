@@ -1,0 +1,1149 @@
+mission "AF: Restocking Ammo"
+	non-blocking
+	invisible
+	repeat
+	entering
+	destination "Earth"
+	to offer
+		or
+			and
+				has "outfit (installed): Javelin Blueprint"
+				"flagship attribute: javelin capacity" > 0
+			and
+				has "outfit (installed): Meteor Missile Blueprint"
+				"flagship attribute: meteor capacity" > 0
+			and
+				has "outfit (installed): Sidewinder Missile Blueprint"
+				"flagship attribute: sidewinder capacity" > 0
+			and
+				has "outfit (installed): Heavy Rocket Blueprint"
+				"flagship attribute: rocket capacity" > 0
+			and
+				has "outfit (installed): Torpedo Blueprint"
+				"flagship attribute: torpedo capacity" > 0
+			and
+				has "outfit (installed): Typhoon Torpedo Blueprint"
+				"flagship attribute: typhoon capacity" > 0
+			and
+				has "outfit (installed): Gatling Gun Ammo Blueprint"
+				"flagship attribute: gatling round capacity" > 0
+			and
+				has "outfit (installed): Hai Tracker Blueprint"
+				"flagship attribute: tracker capacity" > 0
+			and
+				has "outfit (installed): Skipper Railgun Slug Blueprint"
+				"flagship attribute: railgun slug capacity" > 0
+			and
+				has "outfit (installed): EMP Torpedo Blueprint"
+				"flagship attribute: emp torpedo capacity" > 0
+			and
+				has "outfit (installed): Teciimach Canister Blueprint"
+				"flagship attribute: teciimach canister capacity" > 0
+			and
+				has "outfit (installed): Firelight Missile Blueprint"
+				"flagship attribute: firelight missile capacity" > 0
+			and
+				has "outfit (installed): Firestorm Torpedo Blueprint"
+				"flagship attribute: firestorm torpedo capacity" > 0
+			and
+				has "outfit (installed): Piercer Missile Blueprint"
+				"flagship attribute: piercer capacity" > 0
+			and
+				has "outfit (installed): Cluster Mine Blueprint"
+				"flagship attribute: minelayer capacity" > 0
+			and
+				has "outfit (installed): Speck Round Blueprint"
+				"flagship attribute: speck capacity" > 0
+			and
+				has `outfit (installed): "Nettle" KKV Blueprint`
+				"flagship attribute: neetle capacity" > 0
+			and
+				has `outfit (installed): "Orchid" Nuclear Missile Blueprint`
+				"flagship attribute: orchid capacity" > 0
+			and
+				has `outfit (installed): "Ophrys" Nuclear Torpedo Blueprint`
+				"flagship attribute: ophrys capacity" > 0
+			and
+				has "outfit (installed): Finisher Torpedo Blueprint"
+				"flagship attribute: finisher capacity" > 0
+			and
+				has "outfit (installed): Thunderhead Missile Blueprint"
+				"flagship attribute: thunderhead capacity" > 0
+			and
+				has "outfit (installed): Swarm Missile Blueprint"
+				"flagship attribute: swarm capacity" > 0
+			and
+				has "outfit (installed): High-Velocity Spike Blueprint"
+				"flagship attribute: spike capacity" > 0
+			and
+				has "outfit (installed): Star Tail Cell Blueprint"
+				"flagship attribute: star tail capacity" > 0
+
+	on offer
+		conversation
+			action
+				"javelin capacity" = "flagship attribute: javelin capacity" / 1000 + "outfit (flagship installed): Javelin"
+				"meteor capacity" = "flagship attribute: meteor capacity" / 1000 + "outfit (flagship installed): Meteor Missile"
+				"sidewinder capacity" = "flagship attribute: sidewinder capacity" / 1000
+				"rocket capacity" = "flagship attribute: rocket capacity" / 1000 + "outfit (flagship installed): Heavy Rocket"
+				"torpedo capacity" = "flagship attribute: torpedo capacity" / 1000 + "outfit (flagship installed): Torpedo"
+				"typhoon capacity" = "flagship attribute: typhoon capacity" / 1000 + "outfit (flagship installed): Typhoon Torpedo"
+				"gatling round capacity" = "flagship attribute: gatling round capacity" / 1000 + "outfit (flagship installed): Gatling Gun Ammo"
+				"tracker capacity" = "flagship attribute: tracker capacity" / 1000 + "outfit (flagship installed): Hai Tracker"
+				"railgun slug capacity" = "flagship attribute: railgun slug capacity" / 1000 + "outfit (flagship installed): Railgun Slug"
+				"emp torpedo capacity" = "flagship attribute: emp torpedo capacity" / 1000 + "outfit (flagship installed): EMP Torpedo"
+				"teciimach canister capacity" = "flagship attribute: teciimach canister capacity" / 1000 + "outfit (flagship installed): Teciimach Canister"
+				"firelight missile capacity" = "flagship attribute: firelight missile capacity" / 1000 + "outfit (flagship installed): Firelight Missile"
+				"firestorm torpedo capacity" = "flagship attribute: firestorm torpedo capacity" / 1000 + "outfit (flagship installed): Firestorm Torpedo"
+				"piercer capacity" = "flagship attribute: piercer capacity" / 1000 + "outfit (flagship installed): Piercer Missile"
+				"minelayer capacity" = "flagship attribute: minelayer capacity" / 1000 + "outfit (flagship installed): Cluster Mine"
+				"speck capacity" = "flagship attribute: speck capacity" / 1000 + "outfit (flagship installed): Speck Round"
+				"nettle capacity" = "flagship attribute: nettle capacity" / 1000 + `outfit (flagship installed): "Nettle" KKV`
+				"orchid capacity" = "flagship attribute: orchid capacity" / 1000 + `outfit (flagship installed): "Orchid" Nuclear Missile`
+				"ophrys capacity" = "flagship attribute: ophrys capacity" / 1000 + `outfit (flagship installed): "Ophrys" Nuclear Torpedo`
+				"finisher capacity" = "flagship attribute: finisher capacity" / 1000 + "outfit (flagship installed): Finisher Torpedo"
+				"thunderhead capacity" = "flagship attribute: thunderhead capacity" / 1000 + "outfit (flagship installed): Thunderhead Missile"
+				"swarm capacity" = "flagship attribute: swarm capacity" / 1000 + "outfit (flagship installed): Swarm Missile"
+				"spike capacity" = "flagship attribute: spike capacity" / 1000 + "outfit (flagship installed): High-Velocity Spike"
+				"star tail capacity" = "flagship attribute: star tail capacity" / 1000 + "outfit (flagship installed): Star Tail Cell"
+
+				"javelin restocked" = "flagship attribute: javelin capacity" / 1000
+				"meteor restocked" = "flagship attribute: meteor capacity" / 1000
+				"sidewinder restocked" = "flagship attribute: sidewinder capacity" / 1000
+				"rocket restocked" = "flagship attribute: rocket capacity" / 1000
+				"torpedo restocked" = "flagship attribute: torpedo capacity" / 1000
+				"typhoon restocked" = "flagship attribute: typhoon capacity" / 1000
+				"gatling round restocked" = "flagship attribute: gatling round capacity" / 1000
+				"tracker restocked" = "flagship attribute: tracker capacity" / 1000
+				"railgun slug restocked" = "flagship attribute: railgun slug capacity" / 1000
+				"emp torpedo restocked" = "flagship attribute: emp torpedo capacity" / 1000
+				"teciimach canister restocked" = "flagship attribute: teciimach canister capacity" / 1000
+				"firelight missile restocked" = "flagship attribute: firelight missile capacity" / 1000
+				"firestorm torpedo restocked" = "flagship attribute: firestorm torpedo capacity" / 1000
+				"piercer restocked" = "flagship attribute: piercer capacity" / 1000
+				"minelayer restocked" = "flagship attribute: minelayer capacity" / 1000
+				"speck restocked" = "flagship attribute: speck capacity" / 1000
+				"nettle restocked" = "flagship attribute: nettle capacity" / 1000
+				"orchid restocked" = "flagship attribute: orchid capacity" / 1000
+				"ophrys restocked" = "flagship attribute: ophrys capacity" / 1000
+				"finisher restocked" = "flagship attribute: finisher capacity" / 1000
+				"thunderhead restocked" = "flagship attribute: thunderhead capacity" / 1000
+				"swarm restocked" = "flagship attribute: swarm capacity" / 1000
+				"spike restocked" = "flagship attribute: spike capacity" / 1000
+				"star tail restocked" = "flagship attribute: star tail capacity" / 1000
+
+			action
+				counter = "javelin restocked"
+			label "Javelin 10000"
+			branch "Javelin 1000"
+				counter < 10000
+			action
+				outfit "Javelin" 10000
+				counter -= 10000
+			branch "Javelin 10000"
+			label "Javelin 1000"
+			branch "Javelin 100"
+				counter < 1000
+			action
+				outfit "Javelin" 1000
+				counter -= 1000
+			branch "Javelin 1000"
+			label "Javelin 100"
+			branch "Javelin 10"
+				counter < 100
+			action
+				outfit "Javelin" 100
+				counter -= 100
+			branch "Javelin 100"
+			label "Javelin 10"
+			branch "Javelin 1"
+				counter < 10
+			action
+				outfit "Javelin" 10
+				counter -= 10
+			branch "Javelin 10"
+			label "Javelin 1"
+			branch "Javelin end"
+				counter < 1
+			action
+				outfit "Javelin" 1
+				counter -= 1
+			branch "Javelin 1"
+			label "Javelin end"
+			action
+				counter = "meteor restocked"
+			label "Meteor Missile 10000"
+			branch "Meteor Missile 1000"
+				counter < 10000
+			action
+				outfit "Meteor Missile" 10000
+				counter -= 10000
+			branch "Meteor Missile 10000"
+			label "Meteor Missile 1000"
+			branch "Meteor Missile 100"
+				counter < 1000
+			action
+				outfit "Meteor Missile" 1000
+				counter -= 1000
+			branch "Meteor Missile 1000"
+			label "Meteor Missile 100"
+			branch "Meteor Missile 10"
+				counter < 100
+			action
+				outfit "Meteor Missile" 100
+				counter -= 100
+			branch "Meteor Missile 100"
+			label "Meteor Missile 10"
+			branch "Meteor Missile 1"
+				counter < 10
+			action
+				outfit "Meteor Missile" 10
+				counter -= 10
+			branch "Meteor Missile 10"
+			label "Meteor Missile 1"
+			branch "Meteor Missile end"
+				counter < 1
+			action
+				outfit "Meteor Missile" 1
+				counter -= 1
+			branch "Meteor Missile 10"
+			label "Meteor Missile end"
+			action
+				counter = "sidewinder restocked"
+			label "Sidewinder Missile 10000"
+			branch "Sidewinder Missile 1000"
+				counter < 10000
+			action
+				outfit "Sidewinder Missile" 10000
+				counter -= 10000
+			branch "Sidewinder Missile 10000"
+			label "Sidewinder Missile 1000"
+			branch "Sidewinder Missile 100"
+				counter < 1000
+			action
+				outfit "Sidewinder Missile" 1000
+				counter -= 1000
+			branch "Sidewinder Missile 1000"
+			label "Sidewinder Missile 100"
+			branch "Sidewinder Missile 10"
+				counter < 100
+			action
+				outfit "Sidewinder Missile" 100
+				counter -= 100
+			branch "Sidewinder Missile 100"
+			label "Sidewinder Missile 10"
+			branch "Sidewinder Missile 1"
+				counter < 10
+			action
+				outfit "Sidewinder Missile" 10
+				counter -= 10
+			branch "Sidewinder Missile 10"
+			label "Sidewinder Missile 1"
+			branch "Sidewinder Missile end"
+				counter < 1
+			action
+				outfit "Sidewinder Missile" 1
+				counter -= 1
+			branch "Sidewinder Missile 1"
+			label "Sidewinder Missile end"
+			action
+				counter = "rocket restocked"
+			label "Heavy Rocket 10000"
+			branch "Heavy Rocket 1000"
+				counter < 10000
+			action
+				outfit "Heavy Rocket" 10000
+				counter -= 10000
+			branch "Heavy Rocket 10000"
+			label "Heavy Rocket 1000"
+			branch "Heavy Rocket 100"
+				counter < 1000
+			action
+				outfit "Heavy Rocket" 1000
+				counter -= 1000
+			branch "Heavy Rocket 1000"
+			label "Heavy Rocket 100"
+			branch "Heavy Rocket 10"
+				counter < 100
+			action
+				outfit "Heavy Rocket" 100
+				counter -= 100
+			branch "Heavy Rocket 100"
+			label "Heavy Rocket 10"
+			branch "Heavy Rocket 1"
+				counter < 10
+			action
+				outfit "Heavy Rocket" 10
+				counter -= 10
+			branch "Heavy Rocket 10"
+			label "Heavy Rocket 1"
+			branch "Heavy Rocket end"
+				counter < 1
+			action
+				outfit "Heavy Rocket" 1
+				counter -= 1
+			branch "Heavy Rocket 1"
+			label "Heavy Rocket end"
+			action
+				counter = "torpedo restocked"
+			label "Torpedo 10000"
+			branch "Torpedo 1000"
+				counter < 10000
+			action
+				outfit "Torpedo" 10000
+				counter -= 10000
+			branch "Torpedo 10000"
+			label "Torpedo 1000"
+			branch "Torpedo 100"
+				counter < 1000
+			action
+				outfit "Torpedo" 1000
+				counter -= 1000
+			branch "Torpedo 1000"
+			label "Torpedo 100"
+			branch "Torpedo 10"
+				counter < 100
+			action
+				outfit "Torpedo" 100
+				counter -= 100
+			branch "Torpedo 100"
+			label "Torpedo 10"
+			branch "Torpedo 1"
+				counter < 10
+			action
+				outfit "Torpedo" 10
+				counter -= 10
+			branch "Torpedo 10"
+			label "Torpedo 1"
+			branch "Torpedo end"
+				counter < 1
+			action
+				outfit "Torpedo" 1
+				counter -= 1
+			branch "Torpedo 1"
+			label "Torpedo end"
+			action
+				counter = "typhoon restocked"
+			label "Typhoon Torpedo 10000"
+			branch "Typhoon Torpedo 1000"
+				counter < 10000
+			action
+				outfit "Typhoon Torpedo" 10000
+				counter -= 10000
+			branch "Typhoon Torpedo 10000"
+			label "Typhoon Torpedo 1000"
+			branch "Typhoon Torpedo 100"
+				counter < 1000
+			action
+				outfit "Typhoon Torpedo" 1000
+				counter -= 1000
+			branch "Typhoon Torpedo 1000"
+			label "Typhoon Torpedo 100"
+			branch "Typhoon Torpedo 10"
+				counter < 100
+			action
+				outfit "Typhoon Torpedo" 100
+				counter -= 100
+			branch "Typhoon Torpedo 100"
+			label "Typhoon Torpedo 10"
+			branch "Typhoon Torpedo 1"
+				counter < 10
+			action
+				outfit "Typhoon Torpedo" 10
+				counter -= 10
+			branch "Typhoon Torpedo 10"
+			label "Typhoon Torpedo 1"
+			branch "Typhoon Torpedo end"
+				counter < 1
+			action
+				outfit "Typhoon Torpedo" 1
+				counter -= 1
+			branch "Typhoon Torpedo 1"
+			label "Typhoon Torpedo end"
+			action
+				counter = "gatling round restocked"
+			label "Gatling Gun Ammo 10000"
+			branch "Gatling Gun Ammo 1000"
+				counter < 10000
+			action
+				outfit "Gatling Gun Ammo" 10000
+				counter -= 10000
+			branch "Gatling Gun Ammo 10000"
+			label "Gatling Gun Ammo 1000"
+			branch "Gatling Gun Ammo 100"
+				counter < 1000
+			action
+				outfit "Gatling Gun Ammo" 1000
+				counter -= 1000
+			branch "Gatling Gun Ammo 1000"
+			label "Gatling Gun Ammo 100"
+			branch "Gatling Gun Ammo 10"
+				counter < 100
+			action
+				outfit "Gatling Gun Ammo" 100
+				counter -= 100
+			branch "Gatling Gun Ammo 100"
+			label "Gatling Gun Ammo 10"
+			branch "Gatling Gun Ammo 1"
+				counter < 10
+			action
+				outfit "Gatling Gun Ammo" 10
+				counter -= 10
+			branch "Gatling Gun Ammo 10"
+			label "Gatling Gun Ammo 1"
+			branch "Gatling Gun Ammo end"
+				counter < 1
+			action
+				outfit "Gatling Gun Ammo" 1
+				counter -= 1
+			branch "Gatling Gun Ammo 1"
+			label "Gatling Gun Ammo end"
+			action
+				counter = "tracker restocked"
+			label "Hai Tracker 10000"
+			branch "Hai Tracker 1000"
+				counter < 10000
+			action
+				outfit "Hai Tracker" 10000
+				counter -= 10000
+			branch "Hai Tracker 10000"
+			label "Hai Tracker 1000"
+			branch "Hai Tracker 100"
+				counter < 1000
+			action
+				outfit "Hai Tracker" 1000
+				counter -= 1000
+			branch "Hai Tracker 1000"
+			label "Hai Tracker 100"
+			branch "Hai Tracker 10"
+				counter < 100
+			action
+				outfit "Hai Tracker" 100
+				counter -= 100
+			branch "Hai Tracker 100"
+			label "Hai Tracker 10"
+			branch "Hai Tracker 1"
+				counter < 10
+			action
+				outfit "Hai Tracker" 10
+				counter -= 10
+			branch "Hai Tracker 10"
+			label "Hai Tracker 1"
+			branch "Hai Tracker end"
+				counter < 1
+			action
+				outfit "Hai Tracker" 1
+				counter -= 1
+			branch "Hai Tracker 1"
+			label "Hai Tracker end"
+			action
+				counter = "railgun slug restocked"
+			label "Railgun Slug 10000"
+			branch "Railgun Slug 1000"
+				counter < 10000
+			action
+				outfit "Railgun Slug" 10000
+				counter -= 10000
+			branch "Railgun Slug 10000"
+			label "Railgun Slug 1000"
+			branch "Railgun Slug 100"
+				counter < 1000
+			action
+				outfit "Railgun Slug" 1000
+				counter -= 1000
+			branch "Railgun Slug 1000"
+			label "Railgun Slug 100"
+			branch "Railgun Slug 10"
+				counter < 100
+			action
+				outfit "Railgun Slug" 100
+				counter -= 100
+			branch "Railgun Slug 100"
+			label "Railgun Slug 10"
+			branch "Railgun Slug 1"
+				counter < 10
+			action
+				outfit "Railgun Slug" 10
+				counter -= 10
+			branch "Railgun Slug 10"
+			label "Railgun Slug 1"
+			branch "Railgun Slug end"
+				counter < 1
+			action
+				outfit "Railgun Slug" 1
+				counter -= 1
+			branch "Railgun Slug 1"
+			label "Railgun Slug end"
+			action
+				counter = "emp torpedo restocked"
+			label "EMP Torpedo 10000"
+			branch "EMP Torpedo 1000"
+				counter < 10000
+			action
+				outfit "EMP Torpedo" 10000
+				counter -= 10000
+			branch "EMP Torpedo 10000"
+			label "EMP Torpedo 1000"
+			branch "EMP Torpedo 100"
+				counter < 1000
+			action
+				outfit "EMP Torpedo" 1000
+				counter -= 1000
+			branch "EMP Torpedo 1000"
+			label "EMP Torpedo 100"
+			branch "EMP Torpedo 10"
+				counter < 100
+			action
+				outfit "EMP Torpedo" 100
+				counter -= 100
+			branch "EMP Torpedo 100"
+			label "EMP Torpedo 10"
+			branch "EMP Torpedo 1"
+				counter < 10
+			action
+				outfit "EMP Torpedo" 10
+				counter -= 10
+			branch "EMP Torpedo 10"
+			label "EMP Torpedo 1"
+			branch "EMP Torpedo end"
+				counter < 1
+			action
+				outfit "EMP Torpedo" 1
+				counter -= 1
+			branch "EMP Torpedo 1"
+			label "EMP Torpedo end"
+			action
+				counter = "teciimach canister restocked"
+			label "Teciimach Canister 10000"
+			branch "Teciimach Canister 1000"
+				counter < 10000
+			action
+				outfit "Teciimach Canister" 10000
+				counter -= 10000
+			branch "Teciimach Canister 10000"
+			label "Teciimach Canister 1000"
+			branch "Teciimach Canister 100"
+				counter < 1000
+			action
+				outfit "Teciimach Canister" 1000
+				counter -= 1000
+			branch "Teciimach Canister 1000"
+			label "Teciimach Canister 100"
+			branch "Teciimach Canister 10"
+				counter < 100
+			action
+				outfit "Teciimach Canister" 100
+				counter -= 100
+			branch "Teciimach Canister 100"
+			label "Teciimach Canister 10"
+			branch "Teciimach Canister 1"
+				counter < 10
+			action
+				outfit "Teciimach Canister" 10
+				counter -= 10
+			branch "Teciimach Canister 10"
+			label "Teciimach Canister 1"
+			branch "Teciimach Canister end"
+				counter < 1
+			action
+				outfit "Teciimach Canister" 1
+				counter -= 1
+			branch "Teciimach Canister 1"
+			label "Teciimach Canister end"
+			action
+				counter = "firelight missile restocked"
+			label "Firelight Missile 10000"
+			branch "Firelight Missile 1000"
+				counter < 10000
+			action
+				outfit "Firelight Missile" 10000
+				counter -= 10000
+			branch "Firelight Missile 10000"
+			label "Firelight Missile 1000"
+			branch "Firelight Missile 100"
+				counter < 1000
+			action
+				outfit "Firelight Missile" 1000
+				counter -= 1000
+			branch "Firelight Missile 1000"
+			label "Firelight Missile 100"
+			branch "Firelight Missile 10"
+				counter < 100
+			action
+				outfit "Firelight Missile" 100
+				counter -= 100
+			branch "Firelight Missile 100"
+			label "Firelight Missile 10"
+			branch "Firelight Missile 1"
+				counter < 10
+			action
+				outfit "Firelight Missile" 10
+				counter -= 10
+			branch "Firelight Missile 10"
+			label "Firelight Missile 1"
+			branch "Firelight Missile end"
+				counter < 1
+			action
+				outfit "Firelight Missile" 1
+				counter -= 1
+			branch "Firelight Missile 1"
+			label "Firelight Missile end"
+			action
+				counter = "firestorm torpedo restocked"
+			label "Firestorm Torpedo 10000"
+			branch "Firestorm Torpedo 1000"
+				counter < 10000
+			action
+				outfit "Firestorm Torpedo" 10000
+				counter -= 10000
+			branch "Firestorm Torpedo 10000"
+			label "Firestorm Torpedo 1000"
+			branch "Firestorm Torpedo 100"
+				counter < 1000
+			action
+				outfit "Firestorm Torpedo" 1000
+				counter -= 1000
+			branch "Firestorm Torpedo 1000"
+			label "Firestorm Torpedo 100"
+			branch "Firestorm Torpedo 10"
+				counter < 100
+			action
+				outfit "Firestorm Torpedo" 100
+				counter -= 100
+			branch "Firestorm Torpedo 100"
+			label "Firestorm Torpedo 10"
+			branch "Firestorm Torpedo 1"
+				counter < 10
+			action
+				outfit "Firestorm Torpedo" 10
+				counter -= 10
+			branch "Firestorm Torpedo 10"
+			label "Firestorm Torpedo 1"
+			branch "Firestorm Torpedo end"
+				counter < 1
+			action
+				outfit "Firestorm Torpedo" 1
+				counter -= 1
+			branch "Firestorm Torpedo 1"
+			label "Firestorm Torpedo end"
+			action
+				counter = "piercer restocked"
+			label "Piercer Missile 10000"
+			branch "Piercer Missile 1000"
+				counter < 10000
+			action
+				outfit "Piercer Missile" 10000
+				counter -= 10000
+			branch "Piercer Missile 10000"
+			label "Piercer Missile 1000"
+			branch "Piercer Missile 100"
+				counter < 1000
+			action
+				outfit "Piercer Missile" 1000
+				counter -= 1000
+			branch "Piercer Missile 1000"
+			label "Piercer Missile 100"
+			branch "Piercer Missile 10"
+				counter < 100
+			action
+				outfit "Piercer Missile" 100
+				counter -= 100
+			branch "Piercer Missile 100"
+			label "Piercer Missile 10"
+			branch "Piercer Missile 1"
+				counter < 10
+			action
+				outfit "Piercer Missile" 10
+				counter -= 10
+			branch "Piercer Missile 10"
+			label "Piercer Missile 1"
+			branch "Piercer Missile end"
+				counter < 1
+			action
+				outfit "Piercer Missile" 1
+				counter -= 1
+			branch "Piercer Missile 1"
+			label "Piercer Missile end"
+			action
+				counter = "minelayer restocked"
+			label "Cluster Mine 10000"
+			branch "Cluster Mine 1000"
+				counter < 10000
+			action
+				outfit "Cluster Mine" 10000
+				counter -= 10000
+			branch "Cluster Mine 10000"
+			label "Cluster Mine 1000"
+			branch "Cluster Mine 100"
+				counter < 1000
+			action
+				outfit "Cluster Mine" 1000
+				counter -= 1000
+			branch "Cluster Mine 1000"
+			label "Cluster Mine 100"
+			branch "Cluster Mine 10"
+				counter < 100
+			action
+				outfit "Cluster Mine" 100
+				counter -= 100
+			branch "Cluster Mine 100"
+			label "Cluster Mine 10"
+			branch "Cluster Mine 1"
+				counter < 10
+			action
+				outfit "Cluster Mine" 10
+				counter -= 10
+			branch "Cluster Mine 10"
+			label "Cluster Mine 1"
+			branch "Cluster Mine end"
+				counter < 1
+			action
+				outfit "Cluster Mine" 1
+				counter -= 1
+			branch "Cluster Mine 1"
+			label "Cluster Mine end"
+			action
+				counter = "speck restocked"
+			label "Speck Round 10000"
+			branch "Speck Round 1000"
+				counter < 10000
+			action
+				outfit "Speck Round" 10000
+				counter -= 10000
+			branch "Speck Round 10000"
+			label "Speck Round 1000"
+			branch "Speck Round 100"
+				counter < 1000
+			action
+				outfit "Speck Round" 1000
+				counter -= 1000
+			branch "Speck Round 1000"
+			label "Speck Round 100"
+			branch "Speck Round 10"
+				counter < 100
+			action
+				outfit "Speck Round" 100
+				counter -= 100
+			branch "Speck Round 100"
+			label "Speck Round 10"
+			branch "Speck Round 1"
+				counter < 10
+			action
+				outfit "Speck Round" 10
+				counter -= 10
+			branch "Speck Round 10"
+			label "Speck Round 1"
+			branch "Speck Round end"
+				counter < 1
+			action
+				outfit "Speck Round" 1
+				counter -= 1
+			branch "Speck Round 1"
+			label "Speck Round end"
+			action
+				counter = "nettle restocked"
+			label `"Nettle" KKV 10000`
+			branch `"Nettle" KKV 1000`
+				counter < 10000
+			action
+				outfit `"Nettle" KKV` 10000
+				counter -= 10000
+			branch `"Nettle" KKV 10000`
+			label `"Nettle" KKV 1000`
+			branch `"Nettle" KKV 100`
+				counter < 1000
+			action
+				outfit `"Nettle" KKV` 1000
+				counter -= 1000
+			branch `"Nettle" KKV 1000`
+			label `"Nettle" KKV 100`
+			branch `"Nettle" KKV 10`
+				counter < 100
+			action
+				outfit `"Nettle" KKV` 100
+				counter -= 100
+			branch `"Nettle" KKV 100`
+			label `"Nettle" KKV 10`
+			branch `"Nettle" KKV 1`
+				counter < 10
+			action
+				outfit `"Nettle" KKV` 10
+				counter -= 10
+			branch `"Nettle" KKV 10`
+			label `"Nettle" KKV 1`
+			branch `"Nettle" KKV end`
+				counter < 1
+			action
+				outfit `"Nettle" KKV` 1
+				counter -= 1
+			branch `"Nettle" KKV 1`
+			label `"Nettle" KKV end`
+			action
+				counter = "orchid restocked"
+			label `"Orchid" Nuclear Missile 10000`
+			branch `"Orchid" Nuclear Missile 1000`
+				counter < 10000
+			action
+				outfit `"Orchid" Nuclear Missile` 10000
+				counter -= 10000
+			branch `"Orchid" Nuclear Missile 10000`
+			label `"Orchid" Nuclear Missile 1000`
+			branch `"Orchid" Nuclear Missile 100`
+				counter < 1000
+			action
+				outfit `"Orchid" Nuclear Missile` 1000
+				counter -= 1000
+			branch `"Orchid" Nuclear Missile 1000`
+			label `"Orchid" Nuclear Missile 100`
+			branch `"Orchid" Nuclear Missile 10`
+				counter < 100
+			action
+				outfit `"Orchid" Nuclear Missile` 100
+				counter -= 100
+			branch `"Orchid" Nuclear Missile 100`
+			label `"Orchid" Nuclear Missile 10`
+			branch `"Orchid" Nuclear Missile 1`
+				counter < 10
+			action
+				outfit `"Orchid" Nuclear Missile` 10
+				counter -= 10
+			branch `"Orchid" Nuclear Missile 10`
+			label `"Orchid" Nuclear Missile 1`
+			branch `"Orchid" Nuclear Missile end`
+				counter < 1
+			action
+				outfit `"Orchid" Nuclear Missile` 1
+				counter -= 1
+			branch `"Orchid" Nuclear Missile 1`
+			label `"Orchid" Nuclear Missile end`
+			action
+				counter = "ophrys restocked"
+			label `"Ophrys" Nuclear Torpedo 10000`
+			branch `"Ophrys" Nuclear Torpedo 1000`
+				counter < 10000
+			action
+				outfit `"Ophrys" Nuclear Torpedo` 10000
+				counter -= 10000
+			branch `"Ophrys" Nuclear Torpedo 10000`
+			label `"Ophrys" Nuclear Torpedo 1000`
+			branch `"Ophrys" Nuclear Torpedo 100`
+				counter < 1000
+			action
+				outfit `"Ophrys" Nuclear Torpedo` 1000
+				counter -= 1000
+			branch `"Ophrys" Nuclear Torpedo 1000`
+			label `"Ophrys" Nuclear Torpedo 100`
+			branch `"Ophrys" Nuclear Torpedo 10`
+				counter < 100
+			action
+				outfit `"Ophrys" Nuclear Torpedo` 100
+				counter -= 100
+			branch `"Ophrys" Nuclear Torpedo 100`
+			label `"Ophrys" Nuclear Torpedo 10`
+			branch `"Ophrys" Nuclear Torpedo 1`
+				counter < 10
+			action
+				outfit `"Ophrys" Nuclear Torpedo` 10
+				counter -= 10
+			branch `"Ophrys" Nuclear Torpedo 10`
+			label `"Ophrys" Nuclear Torpedo 1`
+			branch `"Ophrys" Nuclear Torpedo end`
+				counter < 1
+			action
+				outfit `"Ophrys" Nuclear Torpedo` 1
+				counter -= 1
+			branch `"Ophrys" Nuclear Torpedo 1`
+			label `"Ophrys" Nuclear Torpedo end`
+			action
+				counter = "finisher restocked"
+			label "Finisher Torpedo 10000"
+			branch "Finisher Torpedo 1000"
+				counter < 10000
+			action
+				outfit "Finisher Torpedo" 10000
+				counter -= 10000
+			branch "Finisher Torpedo 10000"
+			label "Finisher Torpedo 1000"
+			branch "Finisher Torpedo 100"
+				counter < 1000
+			action
+				outfit "Finisher Torpedo" 1000
+				counter -= 1000
+			branch "Finisher Torpedo 1000"
+			label "Finisher Torpedo 100"
+			branch "Finisher Torpedo 10"
+				counter < 100
+			action
+				outfit "Finisher Torpedo" 100
+				counter -= 100
+			branch "Finisher Torpedo 100"
+			label "Finisher Torpedo 10"
+			branch "Finisher Torpedo 1"
+				counter < 10
+			action
+				outfit "Finisher Torpedo" 10
+				counter -= 10
+			branch "Finisher Torpedo 10"
+			label "Finisher Torpedo 1"
+			branch "Finisher Torpedo end"
+				counter < 1
+			action
+				outfit "Finisher Torpedo" 1
+				counter -= 1
+			branch "Finisher Torpedo 1"
+			label "Finisher Torpedo end"
+			action
+				counter = "thunderhead restocked"
+			label "Thunderhead Missile 10000"
+			branch "Thunderhead Missile 1000"
+				counter < 10000
+			action
+				outfit "Thunderhead Missile" 10000
+				counter -= 10000
+			branch "Thunderhead Missile 10000"
+			label "Thunderhead Missile 1000"
+			branch "Thunderhead Missile 100"
+				counter < 1000
+			action
+				outfit "Thunderhead Missile" 1000
+				counter -= 1000
+			branch "Thunderhead Missile 1000"
+			label "Thunderhead Missile 100"
+			branch "Thunderhead Missile 10"
+				counter < 100
+			action
+				outfit "Thunderhead Missile" 100
+				counter -= 100
+			branch "Thunderhead Missile 100"
+			label "Thunderhead Missile 10"
+			branch "Thunderhead Missile 1"
+				counter < 10
+			action
+				outfit "Thunderhead Missile" 10
+				counter -= 10
+			branch "Thunderhead Missile 10"
+			label "Thunderhead Missile 1"
+			branch "Thunderhead Missile end"
+				counter < 1
+			action
+				outfit "Thunderhead Missile" 1
+				counter -= 1
+			branch "Thunderhead Missile 1"
+			label "Thunderhead Missile end"
+			action
+				counter = "swarm restocked"
+			label "Swarm Missile 10000"
+			branch "Swarm Missile 1000"
+				counter < 10000
+			action
+				outfit "Swarm Missile" 10000
+				counter -= 10000
+			branch "Swarm Missile 10000"
+			label "Swarm Missile 1000"
+			branch "Swarm Missile 100"
+				counter < 1000
+			action
+				outfit "Swarm Missile" 1000
+				counter -= 1000
+			branch "Swarm Missile 1000"
+			label "Swarm Missile 100"
+			branch "Swarm Missile 10"
+				counter < 100
+			action
+				outfit "Swarm Missile" 100
+				counter -= 100
+			branch "Swarm Missile 100"
+			label "Swarm Missile 10"
+			branch "Swarm Missile 1"
+				counter < 10
+			action
+				outfit "Swarm Missile" 10
+				counter -= 10
+			branch "Swarm Missile 10"
+			label "Swarm Missile 1"
+			branch "Swarm Missile end"
+				counter < 1
+			action
+				outfit "Swarm Missile" 1
+				counter -= 1
+			branch "Swarm Missile 1"
+			label "Swarm Missile end"
+			action
+				counter = "spike restocked"
+			label "High-Velocity Spike 10000"
+			branch "High-Velocity Spike 1000"
+				counter < 10000
+			action
+				outfit "High-Velocity Spike" 10000
+				counter -= 10000
+			branch "High-Velocity Spike 10000"
+			label "High-Velocity Spike 1000"
+			branch "High-Velocity Spike 100"
+				counter < 1000
+			action
+				outfit "High-Velocity Spike" 1000
+				counter -= 1000
+			branch "High-Velocity Spike 1000"
+			label "High-Velocity Spike 100"
+			branch "High-Velocity Spike 10"
+				counter < 100
+			action
+				outfit "High-Velocity Spike" 100
+				counter -= 100
+			branch "High-Velocity Spike 100"
+			label "High-Velocity Spike 10"
+			branch "High-Velocity Spike 1"
+				counter < 10
+			action
+				outfit "High-Velocity Spike" 10
+				counter -= 10
+			branch "High-Velocity Spike 10"
+			label "High-Velocity Spike 1"
+			branch "High-Velocity Spike end"
+				counter < 1
+			action
+				outfit "High-Velocity Spike" 1
+				counter -= 1
+			branch "High-Velocity Spike 1"
+			label "High-Velocity Spike end"
+			action
+				counter = "star tail restocked"
+			label "Star Tail Cell 10000"
+			branch "Star Tail Cell 1000"
+				counter < 10000
+			action
+				outfit "Star Tail Cell" 10000
+				counter -= 10000
+			branch "Star Tail Cell 10000"
+			label "Star Tail Cell 1000"
+			branch "Star Tail Cell 100"
+				counter < 1000
+			action
+				outfit "Star Tail Cell" 1000
+				counter -= 1000
+			branch "Star Tail Cell 1000"
+			label "Star Tail Cell 100"
+			branch "Star Tail Cell 10"
+				counter < 100
+			action
+				outfit "Star Tail Cell" 100
+				counter -= 100
+			branch "Star Tail Cell 100"
+			label "Star Tail Cell 10"
+			branch "Star Tail Cell 1"
+				counter < 10
+			action
+				outfit "Star Tail Cell" 10
+				counter -= 10
+			branch "Star Tail Cell 10"
+			label "Star Tail Cell 1"
+			branch "Star Tail Cell end"
+				counter < 1
+			action
+				outfit "Star Tail Cell" 1
+				counter -= 1
+			branch "Star Tail Cell 1"
+			label "Star Tail Cell end"
+			`You hear three quick beeps, followed by an automated message from a cheerful hologram:`
+			branch "meteor message"
+				not "javelin restocked"
+			`	"&[javelin restocked] Javelins were produced to restock your flagship up to its capacity of &[javelin capacity] Javelins!"`
+			label "meteor message"
+			branch "sidewinder message"
+				not "meteor restocked"
+			`	"&[meteor restocked] Meteor Missiles were produced to restock your flagship up to its capacity of &[meteor capacity] Meteor Missiles!"`
+			label "sidewinder message"
+			branch "rocket message"
+				not "sidewinder restocked"
+			`	"&[sidewinder restocked] Sidewinder Missiles were produced to restock your flagship up to its capacity of &[sidewinder capacity] Sidewinder Missiles!"`
+			label "rocket message"
+			branch "torpedo message"
+				not "rocket restocked"
+			`	"&[rocket restocked] Heavy Rockets were produced to restock your flagship up to its capacity of &[rocket capacity] Heavy Rockets!"`
+			label "torpedo message"
+			branch "typhoon message"
+				not "torpedo restocked"
+			`	"&[torpedo restocked] Torpedoes were produced to restock your flagship up to its capacity of &[torpedo capacity] Torpedoes!"`
+			label "typhoon message"
+			branch "gatling round message"
+				not "typhoon restocked"
+			`	"&[typhoon restocked] Typhoon Torpedoes were produced to restock your flagship up to its capacity of &[typhoon capacity] Typhoon Torpedoes!"`
+			label "gatling round message"
+			branch "tracker message"
+				not "gatling round restocked"
+			`	"&[gatling round restocked] Gatling rounds were produced to restock your flagship up to its capacity of &[gatling round capacity] Gatling rounds!"`
+			label "tracker message"
+			branch "railgun slug message"
+				not "tracker restocked"
+			`	"&[tracker restocked] Hai Trackers were produced to restock your flagship up to its capacity of &[tracker capacity] Hai Trackers!"`
+			label "railgun slug message"
+			branch "emp torpedo message"
+				not "railgun slug restocked"
+			`	"&[railgun slug restocked] Skipper Railgun Slugs were produced to restock your flagship up to its capacity of &[railgun slug capacity] Skipper Railgun Slugs!"`
+			label "emp torpedo message"
+			branch "teciimach canister message"
+				not "emp torpedo restocked"
+			`	"&[emp torpedo restocked] EMP Torpedoes were produced to restock your flagship up to its capacity of &[emp torpedo capacity] EMP Torpedoes!"`
+			label "teciimach canister message"
+			branch "firelight missile message"
+				not "teciimach canister restocked"
+			`	"&[teciimach canister restocked] Teciimach Canisters were produced to restock your flagship up to its capacity of &[teciimach canister capacity] Teciimach Canisters!"`
+			label "firelight missile message"
+			branch "firestorm torpedo message"
+				not "firelight missile restocked"
+			`	"&[firelight missile restocked] Firelight Missiles were produced to restock your flagship up to its capacity of &[firelight missile capacity] Firelight Missiles!"`
+			label "firestorm torpedo message"
+			branch "piercer message"
+				not "firestorm torpedo restocked"
+			`	"&[firestorm torpedo restocked] Firestorm Torpedoes were produced to restock your flagship up to its capacity of &[firestorm torpedo capacity] Firestorm Torpedoes!"`
+			label "piercer message"
+			branch "minelayer message"
+				not "piercer restocked"
+			`	"&[piercer restocked] Piercer Missiles were produced to restock your flagship up to its capacity of &[piercer capacity] Piercer Missiles!"`
+			label "minelayer message"
+			branch "speck message"
+				not "minelayer restocked"
+			`	"&[minelayer restocked] Cluster Mines were produced to restock your flagship up to its capacity of &[minelayer capacity] Cluster Mines!"`
+			label "speck message"
+			branch "nettle message"
+				not "speck restocked"
+			`	"&[speck restocked] Speck Rounds were produced to restock your flagship up to its capacity of &[speck capacity] Speck Rounds!"`
+			label "nettle message"
+			branch "orchid message"
+				not "nettle restocked"
+			`	"&[nettle restocked] 'Nettle' KKVs were produced to restock your flagship up to its capacity of &[nettle capacity] 'Nettle' KKVs!"`
+			label "orchid message"
+			branch "ophrys message"
+				not "orchid restocked"
+			`	"&[orchid restocked] 'Orchid' Nuclear Missiles were produced to restock your flagship up to its capacity of &[orchid capacity] 'Orchid' Nuclear Missiles!"`
+			label "ophrys message"
+			branch "finisher message"
+				not "ophrys restocked"
+			`	"&[ophrys restocked] 'Ophrys' Nuclear Torpedoes were produced to restock your flagship up to its capacity of &[ophrys capacity] 'Ophrys' Nuclear Torpedoes!"`
+			label "finisher message"
+			branch "thunderhead message"
+				not "finisher restocked"
+			`	"&[finisher restocked] Finisher Torpedoes were produced to restock your flagship up to its capacity of &[finisher capacity] Finisher Torpedoes!"`
+			label "thunderhead message"
+			branch "swarm message"
+				not "thunderhead restocked"
+			`	"&[thunderhead restocked] Thunderhead Missiles were produced to restock your flagship up to its capacity of &[thunderhead capacity] Thunderhead Missiles!"`
+			label "swarm message"
+			branch "spike message"
+				not "swarm restocked"
+			`	"&[swarm restocked] Swarm Missiles were produced to restock your flagship up to its capacity of &[swarm capacity] Swarm Missiles!"`
+			label "spike message"
+			branch "star tail message"
+				not "spike restocked"
+			`	"&[spike restocked] High-Velocity Spikes were produced to restock your flagship up to its capacity of &[spike capacity] High-Velocity Spikes!"`
+			label "star tail message"
+			branch "ending"
+				not "star tail restocked"
+			`	"&[star tail restocked] Star Tail Cells were produced to restock your flagship up to its capacity of &[star tail capacity] Star Tail Cells!"`
+			label ending
+			`	"Thank you for using our Ammo Fabrication service! If you have any inquiries or complaints, contact our customer service department and we will do our best to assist you! Kass. Inc wishes you safe travels!"`
+			`The message clicks off, and the hologram fades.`
+			branch decline
+				random < 99
+			`But I'm sure you won't need it, considering you have &[playtime] on just this save, ahaha~`
+				decline

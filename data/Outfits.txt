@@ -1,0 +1,427 @@
+outfitter "developer"
+	"Ammo Fabricator"
+	"Javelin Blueprint"
+	"Meteor Missile Blueprint"
+	"Sidewinder Missile Blueprint"
+	"Heavy Rocket Blueprint"
+	"Torpedo Blueprint"
+	"Typhoon Torpedo Blueprint"
+	"Gatling Gun Ammo Blueprint"
+	"Hai Tracker Blueprint"
+	"Skipper Railgun Slug Blueprint"
+	"EMP Torpedo Blueprint"
+	"Teciimach Canister Blueprint"
+	"Firelight Missile Blueprint"
+	"Firestorm Torpedo Blueprint"
+	"Piercer Missile Blueprint"
+	"Cluster Mine Blueprint"
+	"Speck Round Blueprint"
+	`"Nettle" KKV Blueprint`
+	`"Orchid" Nuclear Missile Blueprint`
+	`"Ophrys" Nuclear Torpedo Blueprint`
+	"Finisher Torpedo Blueprint"
+	"Thunderhead Missile Blueprint"
+	"Swarm Missile Blueprint"
+	"High-Velocity Spike Blueprint"
+	"Star Tail Cell Blueprint"
+
+#Human outfitters
+
+outfitter "Common Outfits"
+	"Ammo Fabricator"
+	"Meteor Missile Blueprint"
+
+outfitter "Central Outfits Expansion"
+	"Ammo Fabricator"
+	"Javelin Blueprint"
+
+outfitter "Deep Sky Advanced"
+	"Ammo Fabricator"
+	"Torpedo Blueprint"
+	"Typhoon Torpedo Blueprint"
+
+outfitter "Lovelace Basics"
+	"Ammo Fabricator"
+	"Sidewinder Missile Blueprint"
+
+outfitter "Lovelace Advanced"
+	"Ammo Fabricator"
+	"Sidewinder Missile Blueprint"
+	"Torpedo Blueprint"
+	"Typhoon Torpedo Blueprint"
+
+outfitter "Lovelace Security"
+	"Ammo Fabricator"
+	"Sidewinder Missile Blueprint"
+	"Torpedo Blueprint"
+
+outfitter "Delta V Basics"
+	"Ammo Fabricator"
+	"Javelin Blueprint"
+
+outfitter "Delta V Advanced"
+	"Ammo Fabricator"
+	"Javelin Blueprint"
+	"Meteor Missile Blueprint"
+	"Heavy Rocket Blueprint"
+
+outfitter "Syndicate Basics"
+	"Ammo Fabricator"
+	"Meteor Missile Blueprint"
+
+outfitter "Syndicate Advanced"
+	"Ammo Fabricator"
+	"Javelin Blueprint"
+	"Meteor Missile Blueprint"
+	"Torpedo Blueprint"
+
+outfitter "Syndicated Security"
+	"Ammo Fabricator"
+	"Javelin Blueprint"
+	"Meteor Missile Blueprint"
+
+outfitter "Kraz Advanced"
+	"Ammo Fabricator"
+	"Torpedo Blueprint"
+
+outfitter "FW Security"
+	"Ammo Fabricator"
+	"Gatling Gun Ammo Blueprint"
+
+outfitter "Pirate Advanced"
+	"Ammo Fabricator"
+	"Gatling Gun Ammo Blueprint"
+
+#Hai outfitters
+
+outfitter "Hai Intermediate"
+	"Hai Tracker Blueprint"
+	"Skipper Railgun Slug Blueprint"
+
+outfitter "Hai Advanced"
+	"Hai Tracker Blueprint"
+	"Skipper Railgun Slug Blueprint"
+
+outfitter "Hai Security"
+	"Hai Tracker Blueprint"
+
+#Remnant outfitters
+
+outfitter "Remnant"
+	"EMP Torpedo Blueprint"
+	"Teciimach Canister Blueprint"
+	"Firelight Missile Blueprint"
+	"Firestorm Torpedo Blueprint"
+
+#Korath outfitters
+
+outfitter "Korath Basics"
+	"Piercer Missile Blueprint"
+	"Cluster Mine Blueprint"
+	"Firelight Missile Blueprint"
+	"Firestorm Torpedo Blueprint"
+	
+#Avgi outfitters
+
+outfitter "Avgi Militia Surplus"
+	"Speck Round Blueprint"
+
+outfitter "Avgi Twilight Guard"
+	"Speck Round Blueprint"
+	`"Nettle" KKV Blueprint`
+
+outfitter "Avgi Atomics"
+	`"Orchid" Nuclear Missile Blueprint`
+	`"Ophrys" Nuclear Torpedo Blueprint`
+
+#Coalition outfitters
+
+outfitter "Heliarch"
+	"Finisher Torpedo Blueprint"
+
+#Wanderer outfitters
+
+outfitter "Wanderer Advanced"
+	"Thunderhead Missile Blueprint"
+
+#Bunrodea outfitters
+
+outfitter "Bunrodea Basics"
+	"Swarm Missile Blueprint"
+
+#Successor outfitters
+
+outfitter "High Houses Light"
+	"High-Velocity Spike Blueprint"
+
+outfitter "High Houses Heavy"
+	"High-Velocity Spike Blueprint"
+
+#Incipias outfitters
+
+outfitter "Hicemus"
+	"Star Tail Cell Blueprint"
+
+#Custom Category in outfitter for fighter/ammo Fabricator outfits.
+category outfit
+	"Production"
+
+outfit "Ammo Fabricator"
+	category "Production"
+	cost 8200000
+	thumbnail "outfit/outfits expansion"
+	"mass" 80
+	"outfit space" -80
+	"operating costs" 1000
+	"ammo blueprint slot" 1
+	"unplunderable" 1
+	description `An advanced, self-managing ship-board ammo assembly machine for assembling ammo on-the-fly based on an installed blueprint, bought separately.`
+	description `If your flagship has less ammo than its max capacity, the Fabricator will produce new ammo based on the blueprint installed to replace it whenever you take off or jump into a new system.`
+
+#Human blueprints
+
+outfit "Javelin Blueprint"
+	category "Production"
+	cost 50000
+	thumbnail "outfit/javelin"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Javelins for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Meteor Missile Blueprint"
+	category "Production"
+	cost 82500
+	thumbnail "outfit/meteor"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Meteor Missiles for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Sidewinder Missile Blueprint"
+	category "Production"
+	cost 203500
+	thumbnail "outfit/sidewinder"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Sidewinder Missiles for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Heavy Rocket Blueprint"
+	category "Production"
+	cost 200000
+	thumbnail "outfit/rocket"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Heavy Rockets for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Torpedo Blueprint"
+	category "Production"
+	cost 210000
+	thumbnail "outfit/torpedo"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Torpedos for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Typhoon Torpedo Blueprint"
+	category "Production"
+	cost 405000
+	thumbnail "outfit/typhoon"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Typhoon Torpedoes for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+
+outfit "Gatling Gun Ammo Blueprint"
+	category "Production"
+	cost 45000
+	thumbnail "outfit/bullet"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Gatling Gun Ammo for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Hai blueprints
+
+outfit "Hai Tracker Blueprint"
+	category "Production"
+	cost 280000
+	thumbnail "outfit/hai tracker"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Hai Trackers for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Skipper Railgun Slug Blueprint"
+	category "Production"
+	cost 107500
+	thumbnail "outfit/railslug"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Skipper Railgun Slugs for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Remnant blueprints
+
+outfit "EMP Torpedo Blueprint"
+	licenses
+		"Remnant"
+	category "Production"
+	cost 644000
+	thumbnail "outfit/emp torpedo"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture EMP Torpedoes for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Teciimach Canister Blueprint"
+	licenses
+		"Remnant"
+	category "Production"
+	cost 3072500
+	thumbnail "outfit/emp torpedo"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Teciimach Canisters for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Korath blueprints
+
+outfit "Firelight Missile Blueprint"
+	category "Production"
+	cost 517000
+	thumbnail "outfit/firelight"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Firelight Missiles for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Firestorm Torpedo Blueprint"
+	category "Production"
+	cost 1962000
+	thumbnail "outfit/firestorm torpedo"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Firestorm Torpedoes for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Piercer Missile Blueprint"
+	category "Production"
+	cost 560000
+	thumbnail "outfit/piercer"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Piercer Missiles for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit "Cluster Mine Blueprint"
+	category "Production"
+	cost 315000
+	thumbnail "outfit/korath mine"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Cluster Mines for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Avgi blueprints
+
+outfit "Speck Round Blueprint"
+	category "Production"
+	cost 462000
+	thumbnail "outfit/speck round"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Speck Rounds for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit `"Nettle" KKV Blueprint`
+	category "Production"
+	cost 462000
+	thumbnail "outfit/nettle kkv"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description `A blueprint for the Ammo Fabricator to manufacture "Nettle" KKVs for your flagship.`
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit `"Orchid" Nuclear Missile Blueprint`
+	category "Production"
+	cost 5250000
+	thumbnail "outfit/orchid missile"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description `A blueprint for the Ammo Fabricator to manufacture "Orchid" Nuclear Missiles for your flagship.`
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+outfit `"Ophrys" Nuclear Torpedo Blueprint`
+	category "Production"
+	cost 6450000
+	thumbnail "outfit/ophrys torpedo"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description `A blueprint for the Ammo Fabricator to manufacture "Ophrys" Nuclear Torpedoes for your flagship.`
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Coalition blueprints
+
+outfit "Finisher Torpedo Blueprint"
+	category "Production"
+	licenses
+		"Heliarch"
+	cost 3494000
+	thumbnail "outfit/finisher"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Finisher Torpedoes for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Wanderer blueprints
+
+outfit "Thunderhead Missile Blueprint"
+	category "Production"
+	licenses
+		"Wanderer Outfits"
+	cost 360000
+	thumbnail "outfit/thunderhead"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Thunderhead Missiles for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Bunrodea blueprints
+
+outfit "Swarm Missile Blueprint"
+	category "Production"
+	cost 370000
+	thumbnail "outfit/swarm missile"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Swarm Missiles for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Successor blueprints
+
+outfit "High-Velocity Spike Blueprint"
+	category "Production"
+	licenses
+		"Successor"
+	cost 2030000
+	thumbnail "outfit/hv spike"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture High-Velocity Spikes for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
+
+#Incipias blueprints
+
+outfit "Star Tail Cell Blueprint"
+	category "Production"
+	cost 180000
+	thumbnail "outfit/star tail cell"
+	"ammo blueprint slot" -1
+	"unplunderable" 1
+	description "A blueprint for the Ammo Fabricator to manufacture Star Tail Cells for your flagship."
+	description "A fancy hologram shows you how the real deal would look, much more vividly than any ordinary blueprint can."
