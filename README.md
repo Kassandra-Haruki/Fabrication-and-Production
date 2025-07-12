@@ -16,10 +16,10 @@ If you have any inquiries or complaints, contact our customer service department
 
 Credits:
 Made by Kassandra Haruki, but wouldn't be possible without:
-1010todd (on whose plugin this is based on)
-Zuckung (co-author)
-fellow_starmadian (troubleshooter)
-Zoura (inspiration)
+- 1010todd (on whose plugin this is based on)
+- Zuckung (co-author)
+- fellow_starmadian (troubleshooter)
+- Zoura (inspiration)
 
 Made for 0.10.14
 
