@@ -15,7 +15,7 @@ Now that the advertisements are over, here are the current limitations of the pl
 If you have any inquiries or complaints, contact our customer service department and we will do our best to assist you! Kass. Inc wishes you safe travels!
 
 Credits:
-Made by Kassandra Haruki, but wouldn't be possible without:
+- Made by Kassandra Haruki, but wouldn't be possible without:
 - 1010todd (on whose plugin this is based on)
 - Zuckung (co-author)
 - fellow_starmadian (troubleshooter)
