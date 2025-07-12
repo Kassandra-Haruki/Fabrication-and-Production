@@ -169,7 +169,7 @@ category outfit
 outfit "Ammo Fabricator"
 	category "Production"
 	cost 8200000
-	thumbnail "outfit/outfits expansion"
+	thumbnail "outfit/ref_missile_fabricator"
 	"mass" 80
 	"outfit space" -80
 	"operating costs" 1000
