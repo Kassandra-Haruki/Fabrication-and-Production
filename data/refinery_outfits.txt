@@ -1,0 +1,494 @@
+# "ref_Aluminum Bar"
+# "ref_Copper Bar"
+# "ref_Gold Bar"
+# "ref_Iron Bar"
+# "ref_Lead Bar"
+# "ref_Neodymium Bar"
+# "ref_Platinum Bar"
+# "ref_Silicon Bar"
+# "ref_Silver Bar"
+# "ref_Titanium Bar"
+# "ref_Tungsten Bar"
+# "ref_Uranium Bar"
+# "ref_Yottrite Bar"
+# "ref_Void Orchid Bar"
+# "ref_Voidfish Bar"
+# "ref_Integral Wood Bar"
+# "ref_Pollen Bar"
+# "ref_Jamfruit Bar"
+# "ref_blueprint_Aluminum"
+# "ref_blueprint_Copper"
+# "ref_blueprint_Gold"
+# "ref_blueprint_Iron"
+# "ref_blueprint_Lead"
+# "ref_blueprint_Neodymium"
+# "ref_blueprint_Platinum"
+# "ref_blueprint_Silicon"
+# "ref_blueprint_Silver"
+# "ref_blueprint_Titanium"
+# "ref_blueprint_Tungsten"
+# "ref_blueprint_Uranium"
+# "ref_blueprint_Yottrite"
+# "ref_blueprint_Void Orchid"
+# "ref_blueprint_Voidfish"
+# "ref_blueprint_Integral Wood"
+# "ref_blueprint_Pollen"
+# "ref_blueprint_Jamfruit"
+
+
+
+outfit "ref_refinery"
+	"display name" "Refinery"
+	category "Production"
+	cost 1000000
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/outfit expansion"
+	"mass" 20
+	"outfit space" -20
+	"operating costs" 1000
+	"refinery slots" 12
+	"unplunderable" 1
+	description ``
+	description ``
+
+outfitter "refinery"
+	"ref_blueprint_Aluminum"
+	"ref_blueprint_Copper"
+	"ref_blueprint_Gold"
+	"ref_blueprint_Iron"
+	"ref_blueprint_Lead"
+	"ref_blueprint_Neodymium"
+	"ref_blueprint_Platinum"
+	"ref_blueprint_Silicon"
+	"ref_blueprint_Silver"
+	"ref_blueprint_Titanium"
+	"ref_blueprint_Tungsten"
+	"ref_blueprint_Uranium"
+	"ref_blueprint_Yottrite"
+	"ref_blueprint_Void Orchid"
+	"ref_blueprint_Voidfish"
+	"ref_blueprint_Integral Wood"
+	"ref_blueprint_Pollen"
+	"ref_blueprint_Jamfruit"
+	"ref_refinery"
+
+planet "Reunion"
+	outfitter "refinery"
+
+outfit "ref_Aluminum Bar"
+	"display name" "Aluminum Bar"
+	"plural" "Aluminum Bars"
+	category "Minerals"
+	cost 5400 # raw cost 1800
+	thumbnail "outfit/harvested aluminum"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Lightweight and rust resistant, aluminum is often used for the hulls of civilian spacecraft that do not need to be able to stand up to prolonged weapons fire."
+
+outfit "ref_Copper Bar"
+	"display name" "Copper Bar"
+	"plural" "Copper Bars"
+	category "Minerals"
+	cost 9000 # raw cost 3000
+	thumbnail "outfit/harvested copper"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "In its pure form, copper is valued mostly for its high thermal and electrical conductivity. But, it is also used in small quantities in a wide variety of alloys."
+
+outfit "ref_Gold Bar"
+	"display name" "Gold Bar"
+	"plural" "Gold Bars"
+	category "Minerals"
+	cost 24000 # raw cost 8000
+	thumbnail "outfit/harvested gold"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Useful for its high electrical conductivity and prized for its beauty and luxury status, gold can always find a well-paying market."
+
+outfit "ref_Iron Bar"
+	"display name" "Iron Bar"
+	"plural" "Iron Bars"
+	category "Minerals"
+	cost 3600 # raw cost 1200
+	thumbnail "outfit/harvested iron"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Although it is one of the most common metals, iron is also one of the most useful."
+
+outfit "ref_Lead Bar"
+	"display name" "Lead Bar"
+	"plural" "Lead Bars"
+	category "Minerals"
+	cost 2700 # raw cost 900
+	thumbnail "outfit/harvested lead"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "As one of the densest non-radioactive elements, lead has been the material of choice for bullets ever since the invention of firearms. Its other uses are limited by regulations for preventing lead poisoning."
+
+outfit "ref_Neodymium Bar"
+	"display name" "Neodymium Bar"
+	"plural" "Neodymium Bars"
+	category "Minerals"
+	cost 11400 # raw cost 3800
+	thumbnail "outfit/harvested neodymium"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "One of the most abundant of the rare earth elements, neodymium is used to make strongly magnetic alloys for use in engines and generators."
+
+outfit "ref_Platinum Bar"
+	"display name" "Platinum Bar"
+	"plural" "Platinum Bars"
+	category "Minerals"
+	cost 30000 # raw cost 10000
+	thumbnail "outfit/harvested platinum"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "As rare as gold and even more valuable, platinum has many industrial uses because it resists oxidation even when heated to high temperatures."
+
+outfit "ref_Silicon Bar"
+	"display name" "Silicon Block"
+	"plural" "Silicon Blocks"
+	category "Minerals"
+	cost 1200 # raw cost 400
+	thumbnail "outfit/harvested silicon"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Silicon in its pure form is used for electronics and semiconductors. It is a very common element and easy to harvest."
+
+outfit "ref_Silver Bar"
+	"display name" "Silver Bar"
+	"plural" "Silver Bars"
+	category "Minerals"
+	cost 18000 # raw cost 6000
+	thumbnail "outfit/harvested silver"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Although not as pricey as gold, silver is used not just in jewelry but in electronics, disinfectants, and high-quality mirrors, and as a chemical catalyst."
+
+outfit "ref_Titanium Bar"
+	"display name" "Titanium Bar"
+	"plural" "Titanium Bars"
+	category "Minerals"
+	cost 7500 # raw cost 2500
+	thumbnail "outfit/harvested titanium"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Strong, lightweight, and resistant to corrosion, titanium is one of the chief metals used for starship hulls and structural members."
+
+outfit "ref_Tungsten Bar"
+	"display name" "Tungsten Bar"
+	"plural" "Tungsten Bars"
+	category "Minerals"
+	cost 13500 # raw cost 4500
+	thumbnail "outfit/harvested tungsten"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Tungsten has many industrial uses due to its high melting point and its strength."
+
+outfit "ref_Uranium Bar"
+	"display name" "Uranium Bar"
+	"plural" "Uranium Bars"
+	category "Minerals"
+	cost 15000 # raw cost 5000
+	thumbnail "outfit/harvested uranium"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "Uranium is best known for its use in the nuclear reactors that power large starships. Its most stable isotope U-238 is also used for ultra-strong hull plating and for armor-piercing projectiles."
+
+outfit "ref_Yottrite Bar"
+	"display name" "Yottrite Bar"
+	"plural" "Yottrite Bars"
+	category "Minerals"
+	cost 600000 # raw cost 200000
+	thumbnail "outfit/harvested yottrite"
+	"mass" 3.14
+	"installable" -1
+	"minable" 1
+	description "An extraordinarily rare crystalline formation, forged over tens of thousands of years in the molecular clouds around supernova remnants. Although less advanced species can potentially harvest it, very few civilizations other than the Quarg have developed the technology needed to incorporate yottrite in an alloy."
+
+outfit "ref_Void Orchid Bar"
+	"display name" "Void Orchid Block"
+	"plural" "Void Orchid Blocks"
+	category "Minerals"
+	cost 45000 # raw cost 15000
+	thumbnail "outfit/harvested silicon"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "'Void Orchid' is the generic term for a variety of strange, plant-like organisms that live primarily on asteroids. Due to the way they concentrate minerals from their host asteroid, they are valued both as scientific curiosities as well as for their mineral content."
+
+outfit "ref_Voidfish Bar"
+	"display name" "Voidfish Package"
+	"plural" "Voidfish Packages"
+	category "Minerals"
+	cost 7200 # raw cost 2400
+	thumbnail "outfit/voidfish"
+	"mass" 1
+	"installable" -1
+	"minable" 1
+	description "These are a collection of numerous species of voidborne fish harvested in a perhaps unconventional manner. Despite being both flash-boiled and freeze-dried, they are surprisingly appetizing, and equally nourishing."
+
+outfit "ref_Integral Wood Bar"
+	"display name" "Integral Wood Ingot"
+	"plural" "Integral Wood Ingots"
+	category "Minerals"
+	cost 36000 # raw cost 12000
+	thumbnail "outfit/integral wood"
+	"mass" 0.3
+	"installable" -1
+	"minable" 1
+	description "Wood harvested from an integral tree is exquisitely lightweight, strong, and radiation resistant - it also fetches extraordinary prices on the market for exotic goods."
+	description "	Some claim it would even be the material of choice for a wooden starship, as ridiculous as the idea would be."
+
+outfit "ref_Pollen Bar"
+	"display name" "Pollen Block"
+	"plural" "Pollen Blocks"
+	category "Minerals"
+	cost 36000 # raw cost 12000
+	thumbnail "outfit/pollen particle"
+	"mass" 0.3
+	"installable" -1
+	"minable" 1
+	description "This granule of exotic Windjammer pollen is not only replete with nutritious proteins, but also appears to contain valuable platinum group elements bound in organic molecules. This includes a collection of complex enzymes, which appear to be capable of catalyzing many difficult reactions with ease."
+	description "	Achoo!"
+
+outfit "ref_Jamfruit Bar"
+	"display name" "Jamfruit Package"
+	"plural" "Jamfruit Packages"
+	category "Minerals"
+	cost 108000 # raw cost 36000
+	thumbnail "outfit/jamfruit pod"
+	"mass" 0.3
+	"installable" -1
+	"minable" 1
+	description "Closer to a berry than a fruit, this tart prize of a Windjammer tree is not only delicious, but is rich in nutrients. It can be refined to extract a variety of useful medicinal compounds, giving it value both as a delicacy and as a remedy."
+
+outfit "ref_blueprint_Aluminum"
+	"display name" "Blueprint: Aluminum Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Aluminum ores to bars."
+
+outfit "ref_blueprint_Copper"
+	"display name" "Blueprint: Copper Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Copper ores to bars."
+
+outfit "ref_blueprint_Gold"
+	"display name" "Blueprint: Gold Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Gold ores to bars."
+
+outfit "ref_blueprint_Iron"
+	"display name" "Blueprint: Iron Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Iron ores to bars."
+
+outfit "ref_blueprint_Lead"
+	"display name" "Blueprint: Lead Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Lead ores to bars."
+
+outfit "ref_blueprint_Neodymium"
+	"display name" "Blueprint: Neodymium Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Neodymium ores to bars."
+
+outfit "ref_blueprint_Platinum"
+	"display name" "Blueprint: Platinum Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Platinum ores to bars."
+
+outfit "ref_blueprint_Silicon"
+	"display name" "Blueprint: Silicon Block"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Silicon ores to bars."
+
+outfit "ref_blueprint_Silver"
+	"display name" "Blueprint: Silver Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Silver ores to bars."
+
+outfit "ref_blueprint_Titanium"
+	"display name" "Blueprint: Titanium Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Titanium ores to bars."
+
+outfit "ref_blueprint_Tungsten"
+	"display name" "Blueprint: Tungsten Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Tungsten ores to bars."
+
+outfit "ref_blueprint_Uranium"
+	"display name" "Blueprint: Uranium Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Uranium ores to bars."
+
+outfit "ref_blueprint_Yottrite"
+	"display name" "Blueprint: Yottrite Bar"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Yottrite ores to bars."
+
+outfit "ref_blueprint_Void Orchid"
+	"display name" "Blueprint: Void Orchid Block"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Void Orchid ores to bars."
+
+outfit "ref_blueprint_Voidfish"
+	"display name" "Blueprint: Voidfish Package"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Voidfish ores to bars."
+
+outfit "ref_blueprint_Integral Wood"
+	"display name" "Blueprint: Integral Wood Ingot"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Integral Wood ores to bars."
+
+outfit "ref_blueprint_Pollen"
+	"display name" "Blueprint: Pollen Block"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Pollen ores to bars."
+
+outfit "ref_blueprint_Jamfruit"
+	"display name" "Blueprint: Jamfruit Package"
+	category "Production"
+	cost 40000
+	"refinery slots" -1
+	series "Special Systems"
+	index 01700
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	description "This is a blueprint chip for the automatic refinery."
+	description "With it, the refinery can smelt Jamfruit ores to bars."
+
