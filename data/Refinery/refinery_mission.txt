@@ -1,0 +1,357 @@
+mission "ref_Refinement"
+	non-blocking
+	landing
+	invisible
+	repeat
+	to offer
+		has "outfit (installed): ref_refinery"
+		or
+			and
+				"outfit: Aluminum" > 1
+				has "outfit: ref_blueprint_Aluminum"
+			and
+				"outfit: Copper" > 1
+				has "outfit: ref_blueprint_Copper"
+			and
+				"outfit: Gold" > 1
+				has "outfit: ref_blueprint_Gold"
+			and
+				"outfit: Iron" > 1
+				has "outfit: ref_blueprint_Iron"
+			and
+				"outfit: Lead" > 1
+				has "outfit: ref_blueprint_Lead"
+			and
+				"outfit: Neodymium" > 1
+				has "outfit: ref_blueprint_Neodymium"
+			and
+				"outfit: Platinum" > 1
+				has "outfit: ref_blueprint_Platinum"
+			and
+				"outfit: Silicon" > 1
+				has "outfit: ref_blueprint_Silicon"
+			and
+				"outfit: Silver" > 1
+				has "outfit: ref_blueprint_Silver"
+			and
+				"outfit: Titanium" > 1
+				has "outfit: ref_blueprint_Titanium"
+			and
+				"outfit: Tungsten" > 1
+				has "outfit: ref_blueprint_Tungsten"
+			and
+				"outfit: Uranium" > 1
+				has "outfit: ref_blueprint_Uranium"
+			and
+				"outfit: Yottrite" > 1
+				has "outfit: ref_blueprint_Yottrite"
+			and
+				"outfit: Void Orchid" > 1
+				has "outfit: ref_blueprint_Void Orchid"
+			and
+				"outfit: Voidfish" > 1
+				has "outfit: ref_blueprint_Voidfish"
+			and
+				"outfit: Integral Wood" > 1
+				has "outfit: ref_blueprint_Integral Wood"
+			and
+				"outfit: Pollen" > 1
+				has "outfit: ref_blueprint_Pollen"
+			and
+				"outfit: Jamfruit" > 1
+				has "outfit: ref_blueprint_Jamfruit"
+	on offer
+		conversation
+			action
+				"ref_Aluminum" = "outfit: Aluminum" / 2
+				"ref_remainderAluminum" = "outfit: Aluminum" % 2
+				"ref_AluminumOre" = "outfit: Aluminum" - "ref_remainderAluminum"
+				"ref_valueAluminum" = "ref_AluminumOre" * 1800
+				"ref_valueAluminumBar" = "ref_valueAluminum" / 2 * 3
+				"ref_Copper" = "outfit: Copper" / 2
+				"ref_remainderCopper" = "outfit: Copper" % 2
+				"ref_CopperOre" = "outfit: Aluminum" - "ref_remainderCopper"
+				"ref_valueCopper" = "ref_CopperOre" * 3000
+				"ref_valueCopperBar" = "ref_valueCopper" / 2 * 3
+				"ref_Gold" = "outfit: Gold" / 2
+				"ref_remainderGold" = "outfit: Gold" % 2
+				"ref_GoldOre" = "outfit: Aluminum" - "ref_remainderGold"
+				"ref_valueGold" = "ref_GoldOre" * 8000
+				"ref_valueGoldBar" = "ref_valueGold" / 2 * 3
+				"ref_Iron" = "outfit: Iron" / 2
+				"ref_remainderIron" = "outfit: Iron" % 2
+				"ref_IronOre" = "outfit: Aluminum" - "ref_remainderIron"
+				"ref_valueIron" = "ref_IronOre" * 1200
+				"ref_valueIronBar" = "ref_valueIron" / 2 * 3
+				"ref_Lead" = "outfit: Lead" / 2
+				"ref_remainderLead" = "outfit: Lead" % 2
+				"ref_LeadOre" = "outfit: Aluminum" - "ref_remainderLead"
+				"ref_valueLead" = "ref_LeadOre" * 900
+				"ref_valueLeadBar" = "ref_valueLead" / 2 * 3
+				"ref_Neodymium" = "outfit: Neodymium" / 2
+				"ref_remainderNeodymium" = "outfit: Neodymium" % 2
+				"ref_NeodymiumOre" = "outfit: Aluminum" - "ref_remainderNeodymium"
+				"ref_valueNeodymium" = "ref_NeodymiumOre" * 3800
+				"ref_valueNeodymiumBar" = "ref_valueNeodymium" / 2 * 3
+				"ref_Platinum" = "outfit: Platinum" / 2
+				"ref_remainderPlatinum" = "outfit: Platinum" % 2
+				"ref_PlatinumOre" = "outfit: Aluminum" - "ref_remainderPlatinum"
+				"ref_valuePlatinum" = "ref_PlatinumOre" * 10000
+				"ref_valuePlatinumBar" = "ref_valuePlatinum" / 2 * 3
+				"ref_Silicon" = "outfit: Silicon" / 2
+				"ref_remainderSilicon" = "outfit: Silicon" % 2
+				"ref_SiliconOre" = "outfit: Aluminum" - "ref_remainderSilicon"
+				"ref_valueSilicon" = "ref_SiliconOre" * 400
+				"ref_valueSiliconBar" = "ref_valueSilicon" / 2 * 3
+				"ref_Silver" = "outfit: Silver" / 2
+				"ref_remainderSilver" = "outfit: Silver" % 2
+				"ref_SilverOre" = "outfit: Aluminum" - "ref_remainderSilver"
+				"ref_valueSilver" = "ref_SilverOre" * 6000
+				"ref_valueSilverBar" = "ref_valueSilver" / 2 * 3
+				"ref_Titanium" = "outfit: Titanium" / 2
+				"ref_remainderTitanium" = "outfit: Titanium" % 2
+				"ref_TitaniumOre" = "outfit: Aluminum" - "ref_remainderTitanium"
+				"ref_valueTitanium" = "ref_TitaniumOre" * 2500
+				"ref_valueTitaniumBar" = "ref_valueTitanium" / 2 * 3
+				"ref_Tungsten" = "outfit: Tungsten" / 2
+				"ref_remainderTungsten" = "outfit: Tungsten" % 2
+				"ref_TungstenOre" = "outfit: Aluminum" - "ref_remainderTungsten"
+				"ref_valueTungsten" = "ref_TungstenOre" * 4500
+				"ref_valueTungstenBar" = "ref_valueTungsten" / 2 * 3
+				"ref_Uranium" = "outfit: Uranium" / 2
+				"ref_remainderUranium" = "outfit: Uranium" % 2
+				"ref_UraniumOre" = "outfit: Aluminum" - "ref_remainderUranium"
+				"ref_valueUranium" = "ref_UraniumOre" * 5000
+				"ref_valueUraniumBar" = "ref_valueUranium" / 2 * 3
+				"ref_Yottrite" = "outfit: Yottrite" / 2
+				"ref_remainderYottrite" = "outfit: Yottrite" % 2
+				"ref_YottriteOre" = "outfit: Aluminum" - "ref_remainderYottrite"
+				"ref_valueYottrite" = "ref_YottriteOre" * 200000
+				"ref_valueYottriteBar" = "ref_valueYottrite" / 2 * 3
+				"ref_Void Orchid" = "outfit: Void Orchid" / 2
+				"ref_remainderVoid Orchid" = "outfit: Void Orchid" % 2
+				"ref_Void OrchidOre" = "outfit: Aluminum" - "ref_remainderVoid Orchid"
+				"ref_valueVoid Orchid" = "ref_Void OrchidOre" * 15000
+				"ref_valueVoid OrchidBar" = "ref_valueVoid Orchid" / 2 * 3
+				"ref_Voidfish" = "outfit: Voidfish" / 2
+				"ref_remainderVoidfish" = "outfit: Voidfish" % 2
+				"ref_VoidfishOre" = "outfit: Aluminum" - "ref_remainderVoidfish"
+				"ref_valueVoidfish" = "ref_VoidfishOre" * 2400
+				"ref_valueVoidfishBar" = "ref_valueVoidfish" / 2 * 3
+				"ref_Integral Wood" = "outfit: Integral Wood" / 2
+				"ref_remainderIntegral Wood" = "outfit: Integral Wood" % 2
+				"ref_Integral WoodOre" = "outfit: Aluminum" - "ref_remainderIntegral Wood"
+				"ref_valueIntegral Wood" = "ref_Integral WoodOre" * 12000
+				"ref_valueIntegral WoodBar" = "ref_valueIntegral Wood" / 2 * 3
+				"ref_Pollen" = "outfit: Pollen" / 2
+				"ref_remainderPollen" = "outfit: Pollen" % 2
+				"ref_PollenOre" = "outfit: Aluminum" - "ref_remainderPollen"
+				"ref_valuePollen" = "ref_PollenOre" * 12000
+				"ref_valuePollenBar" = "ref_valuePollen" / 2 * 3
+				"ref_Jamfruit" = "outfit: Jamfruit" / 2
+				"ref_remainderJamfruit" = "outfit: Jamfruit" % 2
+				"ref_JamfruitOre" = "outfit: Aluminum" - "ref_remainderJamfruit"
+				"ref_valueJamfruit" = "ref_JamfruitOre" * 36000
+				"ref_valueJamfruitBar" = "ref_valueJamfruit" / 2 * 3
+			`Your Refinery turned:`
+			`&[ref_AluminumOre] raw Aluminum (worth &[credits@ref_valueAluminum] credits) into &[ref_Aluminum] refined Aluminum (worth &[credits@ref_valueAluminumBar] credits)!`
+				to display
+					"outfit: Aluminum" > 1
+			`&[ref_CopperOre] raw Copper (worth &[credits@ref_valueCopper] credits) into &[ref_Copper] refined Copper (worth &[credits@ref_valueCopperBar] credits)!`
+				to display
+					"outfit: Copper" > 1
+			`&[ref_GoldOre] raw Gold (worth &[credits@ref_valueGold] credits) into &[ref_Gold] refined Gold (worth &[credits@ref_valueGoldBar] credits)!`
+				to display
+					"outfit: Gold" > 1
+			`&[ref_IronOre] raw Iron (worth &[credits@ref_valueIron] credits) into &[ref_Iron] refined Iron (worth &[credits@ref_valueIronBar] credits)!`
+				to display
+					"outfit: Iron" > 1
+			`&[ref_LeadOre] raw Lead (worth &[credits@ref_valueLead] credits) into &[ref_Lead] refined Lead (worth &[credits@ref_valueLeadBar] credits)!`
+				to display
+					"outfit: Lead" > 1
+			`&[ref_NeodymiumOre] raw Neodymium (worth &[credits@ref_valueNeodymium] credits) into &[ref_Neodymium] refined Neodymium (worth &[credits@ref_valueNeodymiumBar] credits)!`
+				to display
+					"outfit: Neodymium" > 1
+			`&[ref_PlatinumOre] raw Platinum (worth &[credits@ref_valuePlatinum] credits) into &[ref_Platinum] refined Platinum (worth &[credits@ref_valuePlatinumBar] credits)!`
+				to display
+					"outfit: Platinum" > 1
+			`&[ref_SiliconOre] raw Silicon (worth &[credits@ref_valueSilicon] credits) into &[ref_Silicon] refined Silicon (worth &[credits@ref_valueSiliconBar] credits)!`
+				to display
+					"outfit: Silicon" > 1
+			`&[ref_SilverOre] raw Silver (worth &[credits@ref_valueSilver] credits) into &[ref_Silver] refined Silver (worth &[credits@ref_valueSilverBar] credits)!`
+				to display
+					"outfit: Silver" > 1
+			`&[ref_TitaniumOre] raw Titanium (worth &[credits@ref_valueTitanium] credits) into &[ref_Titanium] refined Titanium (worth &[credits@ref_valueTitaniumBar] credits)!`
+				to display
+					"outfit: Titanium" > 1
+			`&[ref_TungstenOre] raw Tungsten (worth &[credits@ref_valueTungsten] credits) into &[ref_Tungsten] refined Tungsten (worth &[credits@ref_valueTungstenBar] credits)!`
+				to display
+					"outfit: Tungsten" > 1
+			`&[ref_UraniumOre] raw Uranium (worth &[credits@ref_valueUranium] credits) into &[ref_Uranium] refined Uranium (worth &[credits@ref_valueUraniumBar] credits)!`
+				to display
+					"outfit: Uranium" > 1
+			`&[ref_YottriteOre] raw Yottrite (worth &[credits@ref_valueYottrite] credits) into &[ref_Yottrite] refined Yottrite (worth &[credits@ref_valueYottriteBar] credits)!`
+				to display
+					"outfit: Yottrite" > 1
+			`&[ref_Void OrchidOre] raw Void Orchid (worth &[credits@ref_valueVoid Orchid] credits) into &[ref_Void Orchid] refined Void Orchid (worth &[credits@ref_valueVoid OrchidBar] credits)!`
+				to display
+					"outfit: Void Orchid" > 1
+			`&[ref_VoidfishOre] raw Voidfish (worth &[credits@ref_valueVoidfish] credits) into &[ref_Voidfish] refined Voidfish (worth &[credits@ref_valueVoidfishBar] credits)!`
+				to display
+					"outfit: Voidfish" > 1
+			`&[ref_Integral WoodOre] raw Integral Wood (worth &[credits@ref_valueIntegral Wood] credits) into &[ref_Integral Wood] refined Integral Wood (worth &[credits@ref_valueIntegral WoodBar] credits)!`
+				to display
+					"outfit: Integral Wood" > 1
+			`&[ref_PollenOre] raw Pollen (worth &[credits@ref_valuePollen] credits) into &[ref_Pollen] refined Pollen (worth &[credits@ref_valuePollenBar] credits)!`
+				to display
+					"outfit: Pollen" > 1
+			`&[ref_JamfruitOre] raw Jamfruit (worth &[credits@ref_valueJamfruit] credits) into &[ref_Jamfruit] refined Jamfruit (worth &[credits@ref_valueJamfruitBar] credits)!`
+				to display
+					"outfit: Jamfruit" > 1
+			label "refine Aluminum"
+			branch "refine Copper"
+				not "ref_blueprint_Aluminum"
+				"outfit: Aluminum" < 2
+			action
+				outfit "Aluminum" -2
+				outfit "ref_Aluminum Bar"
+			branch "refine Aluminum"
+			label "refine Copper"
+			branch "refine Gold"
+				not "ref_blueprint_Copper"
+				"outfit: Copper" < 2
+			action
+				outfit "Copper" -2
+				outfit "ref_Copper Bar"
+			branch "refine Copper"
+			label "refine Gold"
+			branch "refine Iron"
+				not "ref_blueprint_Gold"
+				"outfit: Gold" < 2
+			action
+				outfit "Gold" -2
+				outfit "ref_Gold Bar"
+			branch "refine Gold"
+			label "refine Iron"
+			branch "refine Lead"
+				not "ref_blueprint_Iron"
+				"outfit: Iron" < 2
+			action
+				outfit "Iron" -2
+				outfit "ref_Iron Bar"
+			branch "refine Iron"
+			label "refine Lead"
+			branch "refine Neodymium"
+				not "ref_blueprint_Lead"
+				"outfit: Lead" < 2
+			action
+				outfit "Lead" -2
+				outfit "ref_Lead Bar"
+			branch "refine Lead"
+			label "refine Neodymium"
+			branch "refine Platinum"
+				not "ref_blueprint_Neodymium"
+				"outfit: Neodymium" < 2
+			action
+				outfit "Neodymium" -2
+				outfit "ref_Neodymium Bar"
+			branch "refine Neodymium"
+			label "refine Platinum"
+			branch "refine Silicon"
+				not "ref_blueprint_Platinum"
+				"outfit: Platinum" < 2
+			action
+				outfit "Platinum" -2
+				outfit "ref_Platinum Bar"
+			branch "refine Platinum"
+			label "refine Silicon"
+			branch "refine Silver"
+				not "ref_blueprint_Silicon"
+				"outfit: Silicon" < 2
+			action
+				outfit "Silicon" -2
+				outfit "ref_Silicon Bar"
+			branch "refine Silicon"
+			label "refine Silver"
+			branch "refine Titanium"
+				not "ref_blueprint_Silver"
+				"outfit: Silver" < 2
+			action
+				outfit "Silver" -2
+				outfit "ref_Silver Bar"
+			branch "refine Silver"
+			label "refine Titanium"
+			branch "refine Tungsten"
+				not "ref_blueprint_Titanium"
+				"outfit: Titanium" < 2
+			action
+				outfit "Titanium" -2
+				outfit "ref_Titanium Bar"
+			branch "refine Titanium"
+			label "refine Tungsten"
+			branch "refine Uranium"
+				not "ref_blueprint_Tungsten"
+				"outfit: Tungsten" < 2
+			action
+				outfit "Tungsten" -2
+				outfit "ref_Tungsten Bar"
+			branch "refine Tungsten"
+			label "refine Uranium"
+			branch "refine Yottrite"
+				not "ref_blueprint_Uranium"
+				"outfit: Uranium" < 2
+			action
+				outfit "Uranium" -2
+				outfit "ref_Uranium Bar"
+			branch "refine Uranium"
+			label "refine Yottrite"
+			branch "refine Void Orchid"
+				not "ref_blueprint_Yottrite"
+				"outfit: Yottrite" < 2
+			action
+				outfit "Yottrite" -2
+				outfit "ref_Yottrite Bar"
+			branch "refine Yottrite"
+			label "refine Void Orchid"
+			branch "refine Voidfish"
+				not "ref_blueprint_Void Orchid"
+				"outfit: Void Orchid" < 2
+			action
+				outfit "Void Orchid" -2
+				outfit "ref_Void Orchid Bar"
+			branch "refine Void Orchid"
+			label "refine Voidfish"
+			branch "refine Integral Wood"
+				not "ref_blueprint_Voidfish"
+				"outfit: Voidfish" < 2
+			action
+				outfit "Voidfish" -2
+				outfit "ref_Voidfish Bar"
+			branch "refine Voidfish"
+			label "refine Integral Wood"
+			branch "refine Pollen"
+				not "ref_blueprint_Integral Wood"
+				"outfit: Integral Wood" < 2
+			action
+				outfit "Integral Wood" -2
+				outfit "ref_Integral Wood Bar"
+			branch "refine Integral Wood"
+			label "refine Pollen"
+			branch "refine Jamfruit"
+				not "ref_blueprint_Pollen"
+				"outfit: Pollen" < 2
+			action
+				outfit "Pollen" -2
+				outfit "ref_Pollen Bar"
+			branch "refine Pollen"
+			label "refine Jamfruit"
+			branch "end"
+				not "ref_blueprint_Jamfruit"
+				"outfit: Jamfruit" < 2
+			action
+				outfit "Jamfruit" -2
+				outfit "ref_Jamfruit Bar"
+			branch "refine Jamfruit"
+			label "end"
+			``
+				decline
