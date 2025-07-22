@@ -43,7 +43,7 @@ outfit "ref_refinery"
 	cost 1000000
 	series "Special Systems"
 	index 01700
-	thumbnail "outfit/ref_refinery^"
+	thumbnail "outfit/ref_refinery"
 	"mass" 20
 	"outfit space" -20
 	"operating costs" 1000
